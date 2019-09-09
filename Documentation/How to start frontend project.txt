@@ -1,0 +1,27 @@
+Module to install:
+ - npm install --save react-router-dom
+
+
+
+
+Eject modules to use css classes: 
+ - npm run eject
+
+ - in webpack.config.js file, change:
+{
+  test: cssRegex,
+  exclude: cssModuleRegex,
+  ...
+}
+
+to:
+
+{
+  test: cssRegex,
+  exclude: cssModuleRegex,
+  use: getStyleLoaders({
+      importLoaders: 1,
+      modules: true,
+      localIdentName: '[name]__[local]__[hash:base64:5]'
+  }),
+}
