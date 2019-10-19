@@ -234,6 +234,9 @@ CREATE TABLE `food_day` (
   `date` 		date 		NOT NULL, 
   `meal_id` 	int(32)  	NOT NULL,
 
+  CONSTRAINT FK_FoodDayMeal FOREIGN KEY(meal_id)
+  REFERENCES meal(id),
+  
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 

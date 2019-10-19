@@ -8,10 +8,10 @@
 		<version>2.1.3.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.languageApp</groupId>
-	<artifactId>langApp</artifactId>
+	<groupId>com.trainingApp</groupId>
+	<artifactId>trainingApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>la</name>
+	<name>trainingApp</name>
 	<description>Demo project for Spring Boot</description>
     <packaging>war</packaging>
 
